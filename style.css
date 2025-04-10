@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background: #f0f8ff;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem; /* azıcık daha boşluk */
+    padding: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem; /* geniş ekranda daha fazla boşluk */
+    }
+  }
+  
+  
+  canvas {
+    width: 95vw;
+    max-width: 400px; /* artırıldı */
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    touch-action: none;
+    background: #fff;
+  }
+  
+  
+  .globe-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .coord-display {
+    margin-top: 1rem; /* Daha fazla boşluk */
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+  }
+  
+
+  
+  .coord-display span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+  }
+  
+  /* Her satır kendi aralığına sahip olacak şekilde boşluk veriyoruz */
+  .coord-display .coord {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.2rem; /* Koordinat ile sıcaklık arası */
+  }
+  
+  .coord-display .weather {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.15rem; /* Sıcaklık ile yükseklik arası */
+  }
+  
+  .coord-display .elevation {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  .coord-display .location {
+    font-size: 0.85rem;
+    color: #444;
+    margin-bottom: 0.15rem;
+  }
+  
